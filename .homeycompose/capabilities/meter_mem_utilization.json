@@ -1,0 +1,15 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Memory used",
+    "nl": "Geheugen gebruikt"
+  },
+  "getable": true,
+  "setable": false,
+  "units": {
+    "en": "%"
+  },
+  "decimals": 0,
+  "insights": true,
+  "icon": "./assets/mem_utilization.svg"
+}

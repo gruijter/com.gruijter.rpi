@@ -1,0 +1,25 @@
+{
+	"title": { 
+		"en": "The GPU temperature changed",
+		"nl": "De GPU temperatuur is veranderd"
+	},
+	"highlight": true,
+	"args": [
+		{
+				"type": "device",
+				"name": "device",
+				"filter": "driver_id=rpi"
+		}
+	],
+	"tokens": [
+		{
+			"name": "measure_temperature.gpu",
+			"type": "number",
+			"title": { 
+				"en": "GPU temperature",
+				"nl": "GPU temperatuur"
+			},
+			"example": 50
+		}
+	]
+}

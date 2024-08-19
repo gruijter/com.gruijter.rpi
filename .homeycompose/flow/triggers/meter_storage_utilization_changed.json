@@ -1,0 +1,25 @@
+{
+	"title": { 
+		"en": "The storage usage (%) changed",
+		"nl": "Het opslag gebruik (%) is veranderd"
+	},
+	"highlight": true,
+	"args": [
+		{
+				"type": "device",
+				"name": "device",
+				"filter": "driver_id=rpi"
+		}
+	],
+	"tokens": [
+		{
+			"name": "meter_storage_utilization",
+			"type": "number",
+			"title": { 
+				"en": "Storage used (%)",
+				"nl": "Opslag gebruikt (%)"
+			},
+			"example": 50
+		}
+	]
+}

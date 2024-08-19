@@ -1,0 +1,27 @@
+{
+	"highlight": true,
+	"title": {
+		"en": "GPIO is !{{high|low}}.",
+		"nl": "GPIO is !{{hoog|laag}}."
+	},
+	"titleFormatted": {
+		"en": "GPIO[[io]] is !{{high|low}}.",
+		"nl": "GPIO[[io]] is !{{hoog|laag}}."
+	},
+	"hint": { "en": "GPIO 0-53" },
+	"args": [
+		{
+		  "type": "device",
+		  "name": "device",
+		  "filter": "driver_id=rpi"
+		},
+		{
+			"type": "number",
+			"name": "io",
+			"title": { "en": "GPIO" },
+			"value": 0,
+			"min": 0,
+			"max": 53
+		}
+	]
+}

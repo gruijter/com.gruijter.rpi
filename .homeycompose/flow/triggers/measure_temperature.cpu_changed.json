@@ -1,0 +1,25 @@
+{
+	"title": { 
+		"en": "The CPU temperature changed",
+		"nl": "De CPU temperatuur is veranderd"
+	},
+	"highlight": true,
+	"args": [
+		{
+				"type": "device",
+				"name": "device",
+				"filter": "driver_id=rpi"
+		}
+	],
+	"tokens": [
+		{
+			"name": "measure_temperature.cpu",
+			"type": "number",
+			"title": { 
+				"en": "CPU temperature",
+				"nl": "CPU temperatuur"
+			},
+			"example": 50
+		}
+	]
+}

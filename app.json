@@ -1,0 +1,1320 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "com.gruijter.rpi",
+  "version": "1.0.0",
+  "compatibility": ">=12.0.0",
+  "sdk": 3,
+  "brandColor": "#cd2355",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Raspberry Pi"
+  },
+  "description": {
+    "en": "Monitor and control your RPi"
+  },
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.jpg",
+    "large": "/assets/images/large.jpg"
+  },
+  "author": {
+    "name": "Robin de Gruijter",
+    "email": "gruijter@hotmail.com"
+  },
+  "flow": {
+    "triggers": [
+      {
+        "highlight": true,
+        "title": {
+          "en": "GPIO turned high.",
+          "nl": "GPIO werd hoog."
+        },
+        "titleFormatted": {
+          "en": "GPIO[[io]] turned high.",
+          "nl": "GPIO[[io]] werd hoog."
+        },
+        "hint": {
+          "en": "GPIO 0-53"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          },
+          {
+            "type": "number",
+            "name": "io",
+            "title": {
+              "en": "GPIO"
+            },
+            "value": 0,
+            "min": 0,
+            "max": 53
+          }
+        ],
+        "id": "gpio_high"
+      },
+      {
+        "highlight": true,
+        "title": {
+          "en": "GPIO turned low.",
+          "nl": "GPIO werd laag."
+        },
+        "titleFormatted": {
+          "en": "GPIO[[io]] turned low.",
+          "nl": "GPIO[[io]] werd laag."
+        },
+        "hint": {
+          "en": "GPIO 0-53"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          },
+          {
+            "type": "number",
+            "name": "io",
+            "title": {
+              "en": "GPIO"
+            },
+            "value": 0,
+            "min": 0,
+            "max": 53
+          }
+        ],
+        "id": "gpio_low"
+      },
+      {
+        "title": {
+          "en": "The CPU temperature changed",
+          "nl": "De CPU temperatuur is veranderd"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "measure_temperature.cpu",
+            "type": "number",
+            "title": {
+              "en": "CPU temperature",
+              "nl": "CPU temperatuur"
+            },
+            "example": 50
+          }
+        ],
+        "id": "measure_temperature.cpu_changed"
+      },
+      {
+        "title": {
+          "en": "The GPU temperature changed",
+          "nl": "De GPU temperatuur is veranderd"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "measure_temperature.gpu",
+            "type": "number",
+            "title": {
+              "en": "GPU temperature",
+              "nl": "GPU temperatuur"
+            },
+            "example": 50
+          }
+        ],
+        "id": "measure_temperature.gpu_changed"
+      },
+      {
+        "title": {
+          "en": "The CPU scaling (%) changed",
+          "nl": "De CPU schaling (%) is veranderd"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "meter_cpu_scaling",
+            "type": "number",
+            "title": {
+              "en": "CPU scaling (%)",
+              "nl": "CPU schaling (%)"
+            },
+            "example": 60
+          }
+        ],
+        "id": "meter_cpu_scaling_changed"
+      },
+      {
+        "title": {
+          "en": "The CPU usage (%) changed",
+          "nl": "Het CPU gebruik (%) is veranderd"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "meter_cpu_utilization",
+            "type": "number",
+            "title": {
+              "en": "CPU used (%)",
+              "nl": "CPU gebruikt (%)"
+            },
+            "example": 50
+          }
+        ],
+        "id": "meter_cpu_utilization_changed"
+      },
+      {
+        "title": {
+          "en": "The memory usage (%) changed",
+          "nl": "Het geheugen gebruik (%) is veranderd"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "meter_mem_utilization",
+            "type": "number",
+            "title": {
+              "en": "Memory used (%)",
+              "nl": "Geheugen gebruikt (%)"
+            },
+            "example": 50
+          }
+        ],
+        "id": "meter_mem_utilization_changed"
+      },
+      {
+        "title": {
+          "en": "Active processes changed",
+          "nl": "Actieve processen is veranderd"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "meter_processes.active",
+            "type": "number",
+            "title": {
+              "en": "Number of processes",
+              "nl": "Aantal processen"
+            },
+            "example": 3
+          }
+        ],
+        "id": "meter_processes.active_changed"
+      },
+      {
+        "title": {
+          "en": "Running processes changed",
+          "nl": "Lopende processen is veranderd"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "meter_processes.running",
+            "type": "number",
+            "title": {
+              "en": "Number of processes",
+              "nl": "Aantal processen"
+            },
+            "example": 3
+          }
+        ],
+        "id": "meter_processes.running_changed"
+      },
+      {
+        "title": {
+          "en": "The storage usage (%) changed",
+          "nl": "Het opslag gebruik (%) is veranderd"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "meter_storage_utilization",
+            "type": "number",
+            "title": {
+              "en": "Storage used (%)",
+              "nl": "Opslag gebruikt (%)"
+            },
+            "example": 50
+          }
+        ],
+        "id": "meter_storage_utilization_changed"
+      },
+      {
+        "title": {
+          "en": "The number of users changed",
+          "nl": "Het aantal gebruikers is veranderd"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "meter_users",
+            "type": "number",
+            "title": {
+              "en": "Number of users",
+              "nl": "Aantal gebruikers"
+            },
+            "example": 3
+          }
+        ],
+        "id": "meter_users_changed"
+      },
+      {
+        "title": {
+          "en": "A user logged in.",
+          "nl": "Een gebruiker is ingelogd."
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "user",
+            "type": "string",
+            "title": {
+              "en": "User name",
+              "nl": "Gebruikersnaam"
+            },
+            "example": "pi"
+          },
+          {
+            "name": "tty",
+            "type": "string",
+            "title": {
+              "en": "TTY",
+              "nl": "TTY"
+            },
+            "example": "pts/0"
+          },
+          {
+            "name": "host",
+            "type": "string",
+            "title": {
+              "en": "Host",
+              "nl": "Host"
+            },
+            "example": "192.168.1.46"
+          },
+          {
+            "name": "loginTime",
+            "type": "string",
+            "title": {
+              "en": "Login time",
+              "nl": "Login tijd"
+            },
+            "example": "2024-08-06T10:52:20+02:00"
+          },
+          {
+            "name": "logoutTime",
+            "type": "string",
+            "title": {
+              "en": "Logout time",
+              "nl": "Logout tijd"
+            },
+            "example": " "
+          },
+          {
+            "name": "duration",
+            "type": "string",
+            "title": {
+              "en": "Duration",
+              "nl": "Duur"
+            },
+            "example": " "
+          },
+          {
+            "name": "info",
+            "type": "string",
+            "title": {
+              "en": "Info",
+              "nl": "Info"
+            },
+            "example": "still logged in"
+          }
+        ],
+        "id": "user_login"
+      },
+      {
+        "title": {
+          "en": "A user logged out.",
+          "nl": "Een gebruiker is uitgelogd."
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "user",
+            "type": "string",
+            "title": {
+              "en": "User name",
+              "nl": "Gebruikersnaam"
+            },
+            "example": "pi"
+          },
+          {
+            "name": "tty",
+            "type": "string",
+            "title": {
+              "en": "TTY",
+              "nl": "TTY"
+            },
+            "example": "pts/0"
+          },
+          {
+            "name": "host",
+            "type": "string",
+            "title": {
+              "en": "Host",
+              "nl": "Host"
+            },
+            "example": "192.168.1.46"
+          },
+          {
+            "name": "loginTime",
+            "type": "string",
+            "title": {
+              "en": "Login time",
+              "nl": "Login tijd"
+            },
+            "example": "2024-08-06T10:52:20+02:00"
+          },
+          {
+            "name": "logoutTime",
+            "type": "string",
+            "title": {
+              "en": "Logout time",
+              "nl": "Logout tijd"
+            },
+            "example": "2024-08-06T10:59:20+02:00"
+          },
+          {
+            "name": "duration",
+            "type": "string",
+            "title": {
+              "en": "Duration",
+              "nl": "Duur"
+            },
+            "example": "00:07"
+          },
+          {
+            "name": "info",
+            "type": "string",
+            "title": {
+              "en": "Info",
+              "nl": "Info"
+            },
+            "example": "gone - no logout"
+          }
+        ],
+        "id": "user_logout"
+      }
+    ],
+    "conditions": [
+      {
+        "highlight": true,
+        "title": {
+          "en": "GPIO is !{{high|low}}.",
+          "nl": "GPIO is !{{hoog|laag}}."
+        },
+        "titleFormatted": {
+          "en": "GPIO[[io]] is !{{high|low}}.",
+          "nl": "GPIO[[io]] is !{{hoog|laag}}."
+        },
+        "hint": {
+          "en": "GPIO 0-53"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          },
+          {
+            "type": "number",
+            "name": "io",
+            "title": {
+              "en": "GPIO"
+            },
+            "value": 0,
+            "min": 0,
+            "max": 53
+          }
+        ],
+        "id": "gpio_is_high"
+      }
+    ],
+    "actions": [
+      {
+        "title": {
+          "en": "Execute a command",
+          "nl": "Voer een commando uit"
+        },
+        "titleFormatted": {
+          "en": "Execute [[command]]",
+          "nl": "Uitvoeren [[command]]"
+        },
+        "hint": {
+          "en": "Execute a CLI command.",
+          "nl": "Voer een CLI commando uit."
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          },
+          {
+            "name": "command",
+            "type": "text",
+            "title": {
+              "en": "Command",
+              "nl": "Commando"
+            },
+            "placeholder": {
+              "en": "sudo who -u"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "name": "response",
+            "title": {
+              "en": "Response",
+              "nl": "Respons"
+            },
+            "type": "string",
+            "example": "pi pts/1 2024-08-19 11:09 . 76414 (192.168.0.18)"
+          }
+        ],
+        "id": "execute_command"
+      },
+      {
+        "title": {
+          "en": "List containers (JSON)",
+          "nl": "Lijst containers (JSON)"
+        },
+        "hint": {
+          "en": "Get a list and status of all Docker containers in JSON format.",
+          "nl": "Geeft een lijst en status van alle Docker containers in JSON formaat."
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          }
+        ],
+        "tokens": [
+          {
+            "name": "containers",
+            "title": {
+              "en": "Containers",
+              "nl": "Containers"
+            },
+            "type": "string",
+            "example": "[{'CONTAINER ID':'b1a043344f3d','IMAGE':'VPNserver:latest','COMMAND':'/init','CREATED':'3 weeks ago','STATUS':'Up About an hour','PORTS':'0.0.0.0:1234->1234','NAMES':'VPNserver'}]"
+          }
+        ],
+        "id": "list_containers"
+      },
+      {
+        "title": {
+          "en": "Power off (!)",
+          "nl": "Uitschakelen (!)"
+        },
+        "hint": {
+          "en": "ATTENTION! There is no command to power on the RPi.",
+          "nl": "LET OP! Er is geen commando om de RPI op te starten."
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          }
+        ],
+        "id": "poweroff"
+      },
+      {
+        "title": {
+          "en": "Reboot",
+          "nl": "Herstart"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          }
+        ],
+        "id": "reboot"
+      },
+      {
+        "title": {
+          "en": "Restart container",
+          "nl": "Restart container"
+        },
+        "titleFormatted": {
+          "en": "Restart container [[id]]",
+          "nl": "Restart container [[id]]"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          },
+          {
+            "name": "id",
+            "type": "autocomplete",
+            "title": {
+              "en": "ID"
+            },
+            "placeholder": {
+              "en": "VPNserver"
+            }
+          }
+        ],
+        "id": "restart_container"
+      },
+      {
+        "title": {
+          "en": "Set GPIO output high/low",
+          "nl": "Zet GPIO uitgang hoog/laag"
+        },
+        "titleFormatted": {
+          "en": "Set GPIO[[io]] to [[high]]",
+          "nl": "Zet GPIO[[io]] naar [[high]]"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          },
+          {
+            "name": "io",
+            "type": "number",
+            "title": {
+              "en": "GPIO"
+            },
+            "placeholder": {
+              "en": "GPIO 0-53"
+            }
+          },
+          {
+            "name": "high",
+            "type": "checkbox",
+            "title": {
+              "en": "High/Low",
+              "nl": "Hoog/Laag"
+            }
+          }
+        ],
+        "id": "set_gpio_output"
+      },
+      {
+        "title": {
+          "en": "Start container",
+          "nl": "Start container"
+        },
+        "titleFormatted": {
+          "en": "Start container [[id]]",
+          "nl": "Start container [[id]]"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          },
+          {
+            "name": "id",
+            "type": "autocomplete",
+            "title": {
+              "en": "ID"
+            },
+            "placeholder": {
+              "en": "VPNserver"
+            }
+          }
+        ],
+        "id": "start_container"
+      },
+      {
+        "title": {
+          "en": "Stop container",
+          "nl": "Stop container"
+        },
+        "titleFormatted": {
+          "en": "Stop container [[id]]",
+          "nl": "Stop container [[id]]"
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          },
+          {
+            "name": "id",
+            "type": "autocomplete",
+            "title": {
+              "en": "ID"
+            },
+            "placeholder": {
+              "en": "VPNserver"
+            }
+          }
+        ],
+        "id": "stop_container"
+      },
+      {
+        "title": {
+          "en": "Update OS (!)",
+          "nl": "OS Updaten (!)"
+        },
+        "hint": {
+          "en": "ATTENTION! This will automatically update the OS without feedback.",
+          "nl": "LET OP! Dit zal automatisch het OS updaten zonder feedback."
+        },
+        "highlight": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rpi"
+          }
+        ],
+        "id": "update"
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "RPi"
+      },
+      "class": "other",
+      "capabilities": [
+        "measure_temperature.gpu",
+        "measure_temperature.cpu",
+        "meter_cpu_utilization",
+        "meter_cpu_scaling",
+        "meter_mem_utilization",
+        "meter_storage_utilization",
+        "meter_processes.active",
+        "meter_processes.running",
+        "uptime",
+        "meter_users",
+        "meter_download_speed.eth0",
+        "meter_upload_speed.eth0",
+        "meter_download_speed.wlan0",
+        "meter_upload_speed.wlan0",
+        "onoff.gpio0",
+        "onoff.gpio1",
+        "onoff.gpio2",
+        "onoff.gpio3",
+        "onoff.gpio4",
+        "onoff.gpio5",
+        "onoff.gpio6",
+        "onoff.gpio7",
+        "onoff.gpio8",
+        "onoff.gpio9",
+        "onoff.gpio10",
+        "onoff.gpio11",
+        "onoff.gpio12",
+        "onoff.gpio13",
+        "onoff.gpio14",
+        "onoff.gpio15"
+      ],
+      "capabilitiesOptions": {
+        "measure_temperature.gpu": {
+          "title": {
+            "en": "GPU Temp",
+            "nl": "GPU Temp"
+          }
+        },
+        "measure_temperature.cpu": {
+          "title": {
+            "en": "CPU Temp",
+            "nl": "CPU Temp"
+          }
+        },
+        "meter_processes.running": {
+          "title": {
+            "en": "Running processes",
+            "nl": "Lopende processen"
+          }
+        },
+        "meter_download_speed.eth0": {
+          "title": {
+            "en": "ETH down speed",
+            "nl": "ETH down snelheid"
+          }
+        },
+        "meter_upload_speed.eth0": {
+          "title": {
+            "en": "ETH up speed",
+            "nl": "ETH up snelheid"
+          }
+        },
+        "meter_download_speed.wlan0": {
+          "title": {
+            "en": "WLAN down speed",
+            "nl": "WLAN down snelheid"
+          }
+        },
+        "meter_upload_speed.wlan0": {
+          "title": {
+            "en": "WLAN up speed",
+            "nl": "WLAN up snelheid"
+          }
+        },
+        "onoff.gpio0": {
+          "title": {
+            "en": "GPIO 00"
+          }
+        },
+        "onoff.gpio1": {
+          "title": {
+            "en": "GPIO 01"
+          }
+        },
+        "onoff.gpio2": {
+          "title": {
+            "en": "GPIO 02"
+          }
+        },
+        "onoff.gpio3": {
+          "title": {
+            "en": "GPIO 03"
+          }
+        },
+        "onoff.gpio4": {
+          "title": {
+            "en": "GPIO 04"
+          }
+        },
+        "onoff.gpio5": {
+          "title": {
+            "en": "GPIO 05"
+          }
+        },
+        "onoff.gpio6": {
+          "title": {
+            "en": "GPIO 06"
+          }
+        },
+        "onoff.gpio7": {
+          "title": {
+            "en": "GPIO 07"
+          }
+        },
+        "onoff.gpio8": {
+          "title": {
+            "en": "GPIO 08"
+          }
+        },
+        "onoff.gpio9": {
+          "title": {
+            "en": "GPIO 09"
+          }
+        },
+        "onoff.gpio10": {
+          "title": {
+            "en": "GPIO 10"
+          }
+        },
+        "onoff.gpio11": {
+          "title": {
+            "en": "GPIO 11"
+          }
+        },
+        "onoff.gpio12": {
+          "title": {
+            "en": "GPIO 12"
+          }
+        },
+        "onoff.gpio13": {
+          "title": {
+            "en": "GPIO 13"
+          }
+        },
+        "onoff.gpio14": {
+          "title": {
+            "en": "GPIO 14"
+          }
+        },
+        "onoff.gpio15": {
+          "title": {
+            "en": "GPIO 15"
+          }
+        }
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "discovery": "rpi_mac",
+      "images": {
+        "small": "/drivers/rpi/assets/images/small.jpg",
+        "large": "/drivers/rpi/assets/images/large.jpg",
+        "xlarge": "/drivers/rpi/assets/images/xlarge.jpg"
+      },
+      "pair": [
+        {
+          "id": "local_login"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "options": {
+            "singular": false
+          },
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "id": "rpi",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "RPi information",
+            "nl": "RPi informatie"
+          },
+          "children": [
+            {
+              "id": "hostName",
+              "type": "label",
+              "label": {
+                "en": "Name on network",
+                "nl": "Naam in het netwerk"
+              },
+              "value": ""
+            },
+            {
+              "id": "model",
+              "type": "label",
+              "label": {
+                "en": "Model",
+                "nl": "Model"
+              },
+              "value": ""
+            },
+            {
+              "id": "revision",
+              "type": "label",
+              "label": {
+                "en": "Revision",
+                "nl": "Revisie"
+              },
+              "value": ""
+            },
+            {
+              "id": "serial",
+              "type": "label",
+              "label": {
+                "en": "S/N",
+                "nl": "S/N"
+              },
+              "value": ""
+            },
+            {
+              "id": "processors",
+              "type": "label",
+              "label": {
+                "en": "Processors",
+                "nl": "Processoren"
+              },
+              "value": ""
+            },
+            {
+              "id": "osArch",
+              "type": "label",
+              "label": {
+                "en": "OS Architecture",
+                "nl": "OS Architectuur"
+              },
+              "value": ""
+            },
+            {
+              "id": "osName",
+              "type": "label",
+              "label": {
+                "en": "OS Name",
+                "nl": "OS Naam"
+              },
+              "value": ""
+            },
+            {
+              "id": "osVersion",
+              "type": "label",
+              "label": {
+                "en": "OS Version",
+                "nl": "OS Versie"
+              },
+              "value": ""
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Connection settings",
+            "nl": "Verbinding instellingen"
+          },
+          "children": [
+            {
+              "id": "host",
+              "type": "text",
+              "label": {
+                "en": "URL or IP address",
+                "nl": "URL of IP adres"
+              },
+              "value": ""
+            },
+            {
+              "id": "port",
+              "type": "number",
+              "label": {
+                "en": "Port",
+                "nl": "Poort"
+              },
+              "hint": {
+                "en": "Default is 22.",
+                "nl": "Standaard is 22."
+              },
+              "value": 22
+            },
+            {
+              "id": "username",
+              "type": "text",
+              "label": {
+                "en": "Username",
+                "nl": "Gebruikersnaam"
+              },
+              "hint": {
+                "en": "Default is pi.",
+                "nl": "Standaard is pi."
+              },
+              "value": ""
+            },
+            {
+              "id": "password",
+              "type": "password",
+              "label": {
+                "en": "Password",
+                "nl": "Wachtwoord"
+              },
+              "hint": {
+                "en": "Deault is raspberry.",
+                "nl": "Standaard is raspberry."
+              },
+              "value": ""
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Monitoring settings",
+            "nl": "Monitoring instellingen"
+          },
+          "children": [
+            {
+              "id": "pollingIntervalSlow",
+              "type": "number",
+              "label": {
+                "en": "Status update interval (s)",
+                "nl": "Status update interval (s)"
+              },
+              "hint": {
+                "en": "A lower value provides faster updates in Homey.",
+                "nl": "Een lagere waarde geeft snellere updates in Homey."
+              },
+              "min": 5,
+              "max": 60,
+              "step": 1,
+              "value": 10
+            },
+            {
+              "id": "pollingInterval",
+              "type": "number",
+              "label": {
+                "en": "GPIO status update interval (s)",
+                "nl": "GPIO status update interval (s)"
+              },
+              "hint": {
+                "en": "A lower value provides faster updates in Homey. Set to 0 to disable GPIO status polling.",
+                "nl": "Een lagere waarde geeft snellere updates in Homey. Zet op 0 om GPIO status polling uit te zetten."
+              },
+              "min": 0,
+              "max": 5,
+              "step": 1,
+              "value": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "capabilities": {
+    "meter_cpu_scaling": {
+      "type": "number",
+      "title": {
+        "en": "CPU scaling",
+        "nl": "CPU schaling"
+      },
+      "getable": true,
+      "setable": false,
+      "units": {
+        "en": "%"
+      },
+      "decimals": 0,
+      "insights": true,
+      "icon": "./assets/cpu_utilization.svg"
+    },
+    "meter_cpu_utilization": {
+      "type": "number",
+      "title": {
+        "en": "CPU used",
+        "nl": "CPU gebruikt"
+      },
+      "getable": true,
+      "setable": false,
+      "units": {
+        "en": "%"
+      },
+      "decimals": 0,
+      "insights": true,
+      "icon": "./assets/cpu_utilization.svg"
+    },
+    "meter_download_speed": {
+      "type": "number",
+      "title": {
+        "en": "Download speed",
+        "nl": "Download snelheid"
+      },
+      "getable": true,
+      "setable": false,
+      "units": {
+        "en": "Mbit/s",
+        "de": "Mbit/s"
+      },
+      "decimals": 2,
+      "insights": true,
+      "icon": "./assets/download_speed.svg"
+    },
+    "meter_mem_utilization": {
+      "type": "number",
+      "title": {
+        "en": "Memory used",
+        "nl": "Geheugen gebruikt"
+      },
+      "getable": true,
+      "setable": false,
+      "units": {
+        "en": "%"
+      },
+      "decimals": 0,
+      "insights": true,
+      "icon": "./assets/mem_utilization.svg"
+    },
+    "meter_processes": {
+      "type": "number",
+      "title": {
+        "en": "Active processes",
+        "nl": "Aktieve processen"
+      },
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "icon": "./assets/meter_processes.svg"
+    },
+    "meter_storage_utilization": {
+      "type": "number",
+      "title": {
+        "en": "Storage used",
+        "nl": "Opslag gebruikt"
+      },
+      "getable": true,
+      "setable": false,
+      "units": {
+        "en": "%"
+      },
+      "decimals": 0,
+      "insights": true,
+      "icon": "./assets/storage_utilization.svg"
+    },
+    "meter_upload_speed": {
+      "type": "number",
+      "title": {
+        "en": "Upload speed",
+        "nl": "Upload snelheid"
+      },
+      "getable": true,
+      "setable": false,
+      "units": {
+        "en": "Mbit/s",
+        "de": "Mbit/s"
+      },
+      "decimals": 2,
+      "insights": true,
+      "icon": "./assets/upload_speed.svg"
+    },
+    "meter_users": {
+      "type": "number",
+      "title": {
+        "en": "Users",
+        "nl": "Gebruikers"
+      },
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "icon": "./assets/meter_users.svg"
+    },
+    "uptime": {
+      "type": "string",
+      "title": {
+        "en": "Uptime"
+      },
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "icon": "./assets/uptime.svg"
+    }
+  },
+  "discovery": {
+    "rpi_mac": {
+      "type": "mac",
+      "mac": {
+        "manufacturer": [
+          [
+            40,
+            205,
+            193
+          ],
+          [
+            184,
+            39,
+            235
+          ],
+          [
+            216,
+            58,
+            221
+          ],
+          [
+            220,
+            166,
+            50
+          ],
+          [
+            228,
+            95,
+            1
+          ]
+        ]
+      }
+    }
+  }
+}

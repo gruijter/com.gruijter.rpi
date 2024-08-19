@@ -1,0 +1,142 @@
+{
+  "name": {
+    "en": "RPi"
+  },
+  "class": "other",
+  "capabilities": [
+    "measure_temperature.gpu",
+    "measure_temperature.cpu",
+    "meter_cpu_utilization",
+    "meter_cpu_scaling",
+    "meter_mem_utilization",
+    "meter_storage_utilization",
+    "meter_processes.active",
+    "meter_processes.running",
+    "uptime",
+    "meter_users",
+    "meter_download_speed.eth0",
+    "meter_upload_speed.eth0",
+    "meter_download_speed.wlan0",
+    "meter_upload_speed.wlan0",
+    "onoff.gpio0",
+    "onoff.gpio1",
+    "onoff.gpio2",
+    "onoff.gpio3",
+    "onoff.gpio4",
+    "onoff.gpio5",
+    "onoff.gpio6",
+    "onoff.gpio7",
+    "onoff.gpio8",
+    "onoff.gpio9",
+    "onoff.gpio10",
+    "onoff.gpio11",
+    "onoff.gpio12",
+    "onoff.gpio13",
+    "onoff.gpio14",
+    "onoff.gpio15"
+  ],
+  "capabilitiesOptions": {
+    "measure_temperature.gpu": { 
+      "title": { "en": "GPU Temp", "nl": "GPU Temp" }
+    },
+    "measure_temperature.cpu": { 
+      "title": { "en": "CPU Temp", "nl": "CPU Temp" }
+    },
+    "meter_processes.running": { 
+      "title": { "en": "Running processes", "nl": "Lopende processen" }
+    },
+    "meter_download_speed.eth0": { 
+      "title": { "en": "ETH down speed", "nl": "ETH down snelheid" }
+    },
+    "meter_upload_speed.eth0": { 
+      "title": { "en": "ETH up speed", "nl": "ETH up snelheid" }
+    },
+    "meter_download_speed.wlan0": { 
+      "title": { "en": "WLAN down speed", "nl": "WLAN down snelheid" }
+    },
+    "meter_upload_speed.wlan0": { 
+      "title": { "en": "WLAN up speed", "nl": "WLAN up snelheid" }
+    },
+    "onoff.gpio0": { 
+      "title": { "en": "GPIO 00" }
+    },
+    "onoff.gpio1": { 
+      "title": { "en": "GPIO 01" }
+    },
+    "onoff.gpio2": { 
+      "title": { "en": "GPIO 02" }
+    },
+    "onoff.gpio3": { 
+      "title": { "en": "GPIO 03" }
+    },
+    "onoff.gpio4": { 
+      "title": { "en": "GPIO 04" }
+    },
+    "onoff.gpio5": { 
+      "title": { "en": "GPIO 05" }
+    },
+    "onoff.gpio6": { 
+      "title": { "en": "GPIO 06" }
+    },
+    "onoff.gpio7": { 
+      "title": { "en": "GPIO 07" }
+    },
+    "onoff.gpio8": { 
+      "title": { "en": "GPIO 08" }
+    },
+    "onoff.gpio9": { 
+      "title": { "en": "GPIO 09" }
+    },
+    "onoff.gpio10": { 
+      "title": { "en": "GPIO 10" }
+    },
+    "onoff.gpio11": { 
+      "title": { "en": "GPIO 11" }
+    },
+    "onoff.gpio12": { 
+      "title": { "en": "GPIO 12" }
+    },
+    "onoff.gpio13": { 
+      "title": { "en": "GPIO 13" }
+    },
+    "onoff.gpio14": { 
+      "title": { "en": "GPIO 14" }
+    },
+    "onoff.gpio15": { 
+      "title": { "en": "GPIO 15" }
+    }
+  },
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
+  "discovery": "rpi_mac",
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.jpg",
+    "large": "{{driverAssetsPath}}/images/large.jpg",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.jpg"
+  },
+  "pair": [
+    {
+			"id": "local_login"
+		},
+    {
+			"id": "list_devices",
+			"template": "list_devices",
+      "options": { "singular": false },
+			"navigation": {
+				"next": "add_devices"
+			}
+		},
+		{
+			"id": "add_devices",
+			"template": "add_devices"
+		},
+    {
+			"id": "done",
+			"template": "done"
+		}
+	]
+}

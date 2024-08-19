@@ -1,0 +1,11 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Active processes",
+    "nl": "Aktieve processen"
+  },
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "icon": "./assets/meter_processes.svg"
+}

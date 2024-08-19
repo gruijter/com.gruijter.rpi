@@ -1,0 +1,48 @@
+
+<script>
+	// Homey.showLoadingOverlay();
+
+	async function manual() {
+		try {
+			Homey.showLoadingOverlay();
+			const settings = {
+				host: document.getElementById('host').value,
+				port: Number(document.getElementById('port').value) || 22,
+				username: document.getElementById('username').value,
+				password: document.getElementById('password').value,
+			};
+			if (settings.host === '' || settings.username === '') throw Error(Homey.__('pair.incomplete'));
+			const device = await Homey.emit('manual_login', settings);
+			Homey.showView('list_devices');
+		} catch (error) { 
+			Homey.hideLoadingOverlay();
+			Homey.alert(error, 'error');
+		}
+	}
+</script>
+
+<form class="homey-form">
+	<div class="homey-form-group">
+		<h1 class="homey-title" data-i18n="pair.title"></h1>
+		<p class="homey-subtitle" data-i18n="pair.text"></p>
+
+		<label class="homey-form-label" for="host" data-i18n="pair.host"></label>
+		<input class="homey-form-input" id="host" type="text" placeholder="e.g. 10.0.0.100" value="" />
+
+		<label class="homey-form-label" for="port" data-i18n="pair.port"></label>
+		<input class="homey-form-input" id="port" type="number" value=22 />
+
+		<label class="homey-form-label" for="username" data-i18n="pair.username"></label>
+		<input class="homey-form-input" id="username" type="text" value="pi" />
+
+		<label class="homey-form-label" for="password" data-i18n="pair.password"></label>
+		<input class="homey-form-input" id="password" type="password" placeholder="e.g. raspberry" value="" />
+
+	</div>
+</form>
+<br>
+<button class="homey-button-primary-full" id="manual" onclick="manual()" data-i18n="pair.continue" ></button>
+
+
+
+

@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "title": {
+    "en": "Uptime"
+  },
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "icon": "./assets/uptime.svg"
+}

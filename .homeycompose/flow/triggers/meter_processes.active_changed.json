@@ -1,0 +1,25 @@
+{
+	"title": { 
+		"en": "Active processes changed",
+		"nl": "Actieve processen is veranderd"
+	},
+	"highlight": true,
+	"args": [
+		{
+				"type": "device",
+				"name": "device",
+				"filter": "driver_id=rpi"
+		}
+	],
+	"tokens": [
+		{
+			"name": "meter_processes.active",
+			"type": "number",
+			"title": { 
+				"en": "Number of processes",
+				"nl": "Aantal processen"
+			},
+			"example": 3
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"title": { 
+		"en": "The memory usage (%) changed",
+		"nl": "Het geheugen gebruik (%) is veranderd"
+	},
+	"highlight": true,
+	"args": [
+		{
+				"type": "device",
+				"name": "device",
+				"filter": "driver_id=rpi"
+		}
+	],
+	"tokens": [
+		{
+			"name": "meter_mem_utilization",
+			"type": "number",
+			"title": { 
+				"en": "Memory used (%)",
+				"nl": "Geheugen gebruikt (%)"
+			},
+			"example": 50
+		}
+	]
+}

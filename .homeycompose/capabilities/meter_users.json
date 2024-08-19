@@ -1,0 +1,11 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Users",
+    "nl": "Gebruikers"
+  },
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "icon": "./assets/meter_users.svg"
+}

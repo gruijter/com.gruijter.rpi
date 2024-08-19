@@ -1,0 +1,36 @@
+{
+  "title": {
+    "en": "Set GPIO output high/low",
+    "nl": "Zet GPIO uitgang hoog/laag"
+  },
+  "titleFormatted": {
+    "en": "Set GPIO[[io]] to [[high]]",
+    "nl": "Zet GPIO[[io]] naar [[high]]"
+  },
+  "highlight": true,
+  "args": [
+    {
+		  "type": "device",
+		  "name": "device",
+		  "filter": "driver_id=rpi"
+		},
+    {
+      "name": "io",
+      "type": "number",
+      "title": {
+        "en": "GPIO"
+      },
+      "placeholder": {
+        "en": "GPIO 0-53"
+      }
+    },
+    {
+      "name": "high",
+      "type": "checkbox",
+      "title": {
+        "en": "High/Low",
+        "nl": "Hoog/Laag"
+      }
+    }
+  ]
+}

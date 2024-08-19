@@ -1,0 +1,14 @@
+{
+  "title": {
+    "en": "Reboot",
+    "nl": "Herstart"
+  },
+  "highlight": true,
+  "args": [
+    {
+		  "type": "device",
+		  "name": "device",
+		  "filter": "driver_id=rpi"
+		}
+  ]
+}

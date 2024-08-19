@@ -1,0 +1,28 @@
+{
+  "title": {
+    "en": "Stop container",
+    "nl": "Stop container"
+  },
+  "titleFormatted": {
+    "en": "Stop container [[id]]",
+    "nl": "Stop container [[id]]"
+  },
+  "highlight": true,
+  "args": [
+    {
+		  "type": "device",
+		  "name": "device",
+		  "filter": "driver_id=rpi"
+		},
+    {
+      "name": "id",
+      "type": "autocomplete",
+      "title": {
+        "en": "ID"
+      },
+      "placeholder": {
+        "en": "VPNserver"
+      }
+    }
+  ]
+}

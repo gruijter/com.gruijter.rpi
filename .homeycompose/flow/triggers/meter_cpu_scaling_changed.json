@@ -1,0 +1,25 @@
+{
+	"title": { 
+		"en": "The CPU scaling (%) changed",
+		"nl": "De CPU schaling (%) is veranderd"
+	},
+	"highlight": true,
+	"args": [
+		{
+				"type": "device",
+				"name": "device",
+				"filter": "driver_id=rpi"
+		}
+	],
+	"tokens": [
+		{
+			"name": "meter_cpu_scaling",
+			"type": "number",
+			"title": { 
+				"en": "CPU scaling (%)",
+				"nl": "CPU schaling (%)"
+			},
+			"example": 60
+		}
+	]
+}

@@ -1,0 +1,79 @@
+{
+	"title": { 
+		"en": "A user logged in.",
+		"nl": "Een gebruiker is ingelogd."
+	},
+	"highlight": true,
+	"args": [
+		{
+				"type": "device",
+				"name": "device",
+				"filter": "driver_id=rpi"
+		}
+	],
+	"tokens": [
+		{
+			"name": "user",
+			"type": "string",
+			"title": { 
+				"en": "User name",
+				"nl": "Gebruikersnaam"
+			},
+			"example": "pi"
+		},
+		{
+			"name": "tty",
+			"type": "string",
+			"title": { 
+				"en": "TTY",
+				"nl": "TTY"
+			},
+			"example": "pts/0"
+		},
+		{
+			"name": "host",
+			"type": "string",
+			"title": { 
+				"en": "Host",
+				"nl": "Host"
+			},
+			"example": "192.168.1.46"
+		},
+		{
+			"name": "loginTime",
+			"type": "string",
+			"title": { 
+				"en": "Login time",
+				"nl": "Login tijd"
+			},
+			"example": "2024-08-06T10:52:20+02:00"
+		},
+		{
+			"name": "logoutTime",
+			"type": "string",
+			"title": { 
+				"en": "Logout time",
+				"nl": "Logout tijd"
+			},
+			"example": " "
+		},
+		{
+			"name": "duration",
+			"type": "string",
+			"title": { 
+				"en": "Duration",
+				"nl": "Duur"
+			},
+			"example": " "
+		},
+		{
+			"name": "info",
+			"type": "string",
+			"title": { 
+				"en": "Info",
+				"nl": "Info"
+			},
+			"example": "still logged in"
+		}
+	]
+}

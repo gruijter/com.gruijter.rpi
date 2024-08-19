@@ -1,0 +1,181 @@
+[
+	{
+		"type": "group",
+		"label": {
+				"en": "RPi information",
+				"nl": "RPi informatie"
+		},
+		"children": [
+			{
+				"id": "hostName",
+				"type": "label",
+				"label": {
+						"en": "Name on network",
+						"nl": "Naam in het netwerk"
+				},
+				"value": ""
+			},
+			{
+				"id": "model",
+				"type": "label",
+				"label": {
+						"en": "Model",
+						"nl": "Model"
+				},
+				"value": ""
+			},
+			{
+				"id": "revision",
+				"type": "label",
+				"label": {
+						"en": "Revision",
+						"nl": "Revisie"
+				},
+				"value": ""
+			},
+			{
+				"id": "serial",
+				"type": "label",
+				"label": {
+						"en": "S/N",
+						"nl": "S/N"
+				},
+				"value": ""
+			},
+			{
+				"id": "processors",
+				"type": "label",
+				"label": {
+						"en": "Processors",
+						"nl": "Processoren"
+				},
+				"value": ""
+			},
+			{
+				"id": "osArch",
+				"type": "label",
+				"label": {
+						"en": "OS Architecture",
+						"nl": "OS Architectuur"
+				},
+				"value": ""
+			},
+			{
+				"id": "osName",
+				"type": "label",
+				"label": {
+						"en": "OS Name",
+						"nl": "OS Naam"
+				},
+				"value": ""
+			},
+			{
+				"id": "osVersion",
+				"type": "label",
+				"label": {
+						"en": "OS Version",
+						"nl": "OS Versie"
+				},
+				"value": ""
+			}
+		]
+	},
+	{
+		"type": "group",
+		"label": {
+				"en": "Connection settings",
+				"nl": "Verbinding instellingen"
+		},
+		"children": [	
+			{
+				"id": "host",
+				"type": "text",
+				"label": {
+						"en": "URL or IP address",
+						"nl": "URL of IP adres"
+				},
+				"value": ""
+			},
+			{
+				"id": "port",
+				"type": "number",
+				"label": {
+						"en": "Port",
+						"nl": "Poort"
+				},
+				"hint": {
+					"en": "Default is 22.",
+					"nl": "Standaard is 22."
+				},
+				"value": 22
+			},
+			{
+				"id": "username",
+				"type": "text",
+				"label": {
+						"en": "Username",
+						"nl": "Gebruikersnaam"
+				},
+				"hint": {
+					"en": "Default is pi.",
+					"nl": "Standaard is pi."
+				},
+				"value": ""
+			},
+			{
+				"id": "password",
+				"type": "password",
+				"label": {
+						"en": "Password",
+						"nl": "Wachtwoord"
+				},
+				"hint": {
+					"en": "Deault is raspberry.",
+					"nl": "Standaard is raspberry."
+				},
+				"value": ""
+			}
+		]
+	},
+	{
+		"type": "group",
+		"label": {
+				"en": "Monitoring settings",
+				"nl": "Monitoring instellingen"
+		},
+		"children": [
+			{
+				"id": "pollingIntervalSlow",
+				"type": "number",
+				"label": {
+						"en": "Status update interval (s)",
+						"nl": "Status update interval (s)"
+				},
+				"hint": {
+					"en": "A lower value provides faster updates in Homey.",
+					"nl": "Een lagere waarde geeft snellere updates in Homey."
+				},
+				"min": 5,
+				"max": 60,
+				"step": 1,
+				"value": 10
+			},
+			{
+				"id": "pollingInterval",
+				"type": "number",
+				"label": {
+						"en": "GPIO status update interval (s)",
+						"nl": "GPIO status update interval (s)"
+				},
+				"hint": {
+					"en": "A lower value provides faster updates in Homey. Set to 0 to disable GPIO status polling.",
+					"nl": "Een lagere waarde geeft snellere updates in Homey. Zet op 0 om GPIO status polling uit te zetten."
+				},
+				"min": 0,
+				"max": 5,
+				"step": 1,
+				"value": 5
+			}
+		]
+	}
+]

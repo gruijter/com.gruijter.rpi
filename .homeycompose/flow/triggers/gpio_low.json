@@ -1,0 +1,27 @@
+{
+	"highlight": true,
+	"title": {
+		"en": "GPIO turned low.",
+		"nl": "GPIO werd laag."
+	},
+	"titleFormatted": {
+		"en": "GPIO[[io]] turned low.",
+		"nl": "GPIO[[io]] werd laag."
+	},
+	"hint": { "en": "GPIO 0-53" },
+	"args": [
+		{
+		  "type": "device",
+		  "name": "device",
+		  "filter": "driver_id=rpi"
+		},
+		{
+			"type": "number",
+			"name": "io",
+			"title": { "en": "GPIO" },
+			"value": 0,
+			"min": 0,
+			"max": 53
+		}
+	]
+}

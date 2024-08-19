@@ -1,0 +1,31 @@
+{
+	"title": {
+		"en": "List containers (JSON)",
+		"nl": "Lijst containers (JSON)"
+	},
+	"hint": {
+		"en": "Get a list and status of all Docker containers in JSON format.",
+		"nl": "Geeft een lijst en status van alle Docker containers in JSON formaat."
+	},
+	"highlight": true,
+	"args": [
+		{
+		  "type": "device",
+		  "name": "device",
+		  "filter": "driver_id=rpi"
+		}
+	],
+	"tokens": [
+		{
+			"name": "containers",
+			"title": {
+				"en": "Containers",
+				"nl": "Containers"
+			},
+			"type": "string",
+			"example": "[{'CONTAINER ID':'b1a043344f3d','IMAGE':'VPNserver:latest','COMMAND':'/init','CREATED':'3 weeks ago','STATUS':'Up About an hour','PORTS':'0.0.0.0:1234->1234','NAMES':'VPNserver'}]"
+		}
+	]
+}
+
+

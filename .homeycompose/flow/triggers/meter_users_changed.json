@@ -1,0 +1,25 @@
+{
+	"title": { 
+		"en": "The number of users changed",
+		"nl": "Het aantal gebruikers is veranderd"
+	},
+	"highlight": true,
+	"args": [
+		{
+				"type": "device",
+				"name": "device",
+				"filter": "driver_id=rpi"
+		}
+	],
+	"tokens": [
+		{
+			"name": "meter_users",
+			"type": "number",
+			"title": { 
+				"en": "Number of users",
+				"nl": "Aantal gebruikers"
+			},
+			"example": 3
+		}
+	]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "com.gruijter.rpi",
+  "version": "1.0.0",
+  "compatibility": ">=12.0.0",
+  "sdk": 3,
+  "brandColor": "#cd2355",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Raspberry Pi"
+  },
+  "description": {
+    "en": "Monitor and control your RPi"
+  },
+  "tags": {
+    "en": [
+      "rpi",
+      "raspberry",
+      "linux",
+      "debian",
+      "ssh"
+    ]
+  },
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.jpg",
+    "large": "/assets/images/large.jpg"
+  },
+  "author": {
+    "name": "Robin de Gruijter",
+    "email": "gruijter@hotmail.com"
+  },
+  "copyright": "Robin de Gruijter (gruijter@hotmail.com)",
+  "license": "GPL-3.0-or-later",
+  "contributors": {
+    "developers": [
+      {
+        "name": "Robin de Gruijter",
+        "email": "gruijter@hotmail.com"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "gruijter"
+      }
+    }
+  },
+  "homeyCommunityTopicId": 114652,
+  "source": "https://github.com/gruijter/com.gruijter.rpi",
+  "bugs": {
+    "url": "https://github.com/gruijter/com.gruijter.rpi/issues"
+  }
+}

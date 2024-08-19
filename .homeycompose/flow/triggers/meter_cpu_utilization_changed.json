@@ -1,0 +1,25 @@
+{
+	"title": { 
+		"en": "The CPU usage (%) changed",
+		"nl": "Het CPU gebruik (%) is veranderd"
+	},
+	"highlight": true,
+	"args": [
+		{
+				"type": "device",
+				"name": "device",
+				"filter": "driver_id=rpi"
+		}
+	],
+	"tokens": [
+		{
+			"name": "meter_cpu_utilization",
+			"type": "number",
+			"title": { 
+				"en": "CPU used (%)",
+				"nl": "CPU gebruikt (%)"
+			},
+			"example": 50
+		}
+	]
+}

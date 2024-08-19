@@ -1,0 +1,44 @@
+{
+  "title": {
+    "en": "Execute a command",
+    "nl": "Voer een commando uit"
+  },
+  "titleFormatted": {
+    "en": "Execute [[command]]",
+    "nl": "Uitvoeren [[command]]"
+  },
+  "hint": {
+    "en": "Execute a CLI command.",
+    "nl": "Voer een CLI commando uit."
+  },
+  "highlight": true,
+  "args": [
+    {
+		  "type": "device",
+		  "name": "device",
+		  "filter": "driver_id=rpi"
+		},
+    {
+      "name": "command",
+      "type": "text",
+      "title": {
+        "en": "Command",
+        "nl": "Commando"
+      },
+      "placeholder": {
+        "en": "sudo who -u"
+      }
+    }
+  ],
+  "tokens": [
+		{
+			"name": "response",
+			"title": {
+				"en": "Response",
+				"nl": "Respons"
+			},
+			"type": "string",
+			"example": "pi pts/1 2024-08-19 11:09 . 76414 (192.168.0.18)"
+		}
+	]
+}
