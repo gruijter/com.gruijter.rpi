@@ -81,7 +81,7 @@ class RPiDriver extends Driver {
         await rpi.connect();
         const sysInfo = await rpi.getSysInfo();
         Object.entries(sysInfo).forEach((entry) => {
-          settings[entry[0]] = entry[1].toString();
+          if (entry[1]) settings[entry[0]] = entry[1].toString();
         });
         const device = {
           name: `${sysInfo.hostName}`,

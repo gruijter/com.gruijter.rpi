@@ -11,7 +11,7 @@ Shutdown or reboot the system, update the OS, and control the outputs of the GPI
 ## Docker containers
 Stop, start and restart containers
 
-## Run any CLI command you want from Homey
+## Run CLI commands
 From an advanced flow you can run any command you like (I hope you know what you are doing ;))
 
 ## How to setup
@@ -21,4 +21,5 @@ In Homey enter the IP address of the Rpi, and supply the username and password.
 ## Does it work on other Linux hardware?
 The app is designed to work with Raspberry Pi hardware and Raspberry OS. Other hardware and Linux distributions might partly work. Just try and find out!
 
-
+## Homey support forum
+https://community.homey.app/t/114652

@@ -1,9 +1,9 @@
 {
   "id": "com.gruijter.rpi",
-  "version": "1.0.0",
-  "compatibility": ">=12.0.0",
+  "version": "1.0.1",
+  "compatibility": ">=10.0.0",
   "sdk": 3,
-  "brandColor": "#cd2355",
+  "brandColor": "#c7053d",
   "platforms": [
     "local"
   ],

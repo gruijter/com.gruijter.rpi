@@ -7,5 +7,5 @@ Shutdown or reboot the system, update the OS, and control the outputs of the GPI
 Docker containers:
 Stop, start and restart containers
 
-Run any CLI command you want from Homey:
+Run CLI commands:
 From an advanced flow you can run any command you like (I hope you know what you are doing ;))

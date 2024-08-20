@@ -1,10 +1,10 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.gruijter.rpi",
-  "version": "1.0.0",
-  "compatibility": ">=12.0.0",
+  "version": "1.0.1",
+  "compatibility": ">=10.0.0",
   "sdk": 3,
-  "brandColor": "#cd2355",
+  "brandColor": "#c7053d",
   "platforms": [
     "local"
   ],
@@ -13,6 +13,15 @@
   },
   "description": {
     "en": "Monitor and control your RPi"
+  },
+  "tags": {
+    "en": [
+      "rpi",
+      "raspberry",
+      "linux",
+      "debian",
+      "ssh"
+    ]
   },
   "category": [
     "tools"
@@ -26,17 +35,39 @@
     "name": "Robin de Gruijter",
     "email": "gruijter@hotmail.com"
   },
+  "copyright": "Robin de Gruijter (gruijter@hotmail.com)",
+  "license": "GPL-3.0-or-later",
+  "contributors": {
+    "developers": [
+      {
+        "name": "Robin de Gruijter",
+        "email": "gruijter@hotmail.com"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "gruijter"
+      }
+    }
+  },
+  "homeyCommunityTopicId": 114652,
+  "source": "https://github.com/gruijter/com.gruijter.rpi",
+  "bugs": {
+    "url": "https://github.com/gruijter/com.gruijter.rpi/issues"
+  },
   "flow": {
     "triggers": [
       {
         "highlight": true,
         "title": {
-          "en": "GPIO turned high.",
-          "nl": "GPIO werd hoog."
+          "en": "GPIO turned high",
+          "nl": "GPIO werd hoog"
         },
         "titleFormatted": {
-          "en": "GPIO[[io]] turned high.",
-          "nl": "GPIO[[io]] werd hoog."
+          "en": "GPIO[[io]] turned high",
+          "nl": "GPIO[[io]] werd hoog"
         },
         "hint": {
           "en": "GPIO 0-53"
@@ -63,12 +94,12 @@
       {
         "highlight": true,
         "title": {
-          "en": "GPIO turned low.",
-          "nl": "GPIO werd laag."
+          "en": "GPIO turned low",
+          "nl": "GPIO werd laag"
         },
         "titleFormatted": {
-          "en": "GPIO[[io]] turned low.",
-          "nl": "GPIO[[io]] werd laag."
+          "en": "GPIO[[io]] turned low",
+          "nl": "GPIO[[io]] werd laag"
         },
         "hint": {
           "en": "GPIO 0-53"
@@ -328,8 +359,8 @@
       },
       {
         "title": {
-          "en": "A user logged in.",
-          "nl": "Een gebruiker is ingelogd."
+          "en": "A user logged in",
+          "nl": "Een gebruiker is ingelogd"
         },
         "highlight": true,
         "args": [
@@ -408,8 +439,8 @@
       },
       {
         "title": {
-          "en": "A user logged out.",
-          "nl": "Een gebruiker is uitgelogd."
+          "en": "A user logged out",
+          "nl": "Een gebruiker is uitgelogd"
         },
         "highlight": true,
         "args": [
@@ -491,12 +522,12 @@
       {
         "highlight": true,
         "title": {
-          "en": "GPIO is !{{high|low}}.",
-          "nl": "GPIO is !{{hoog|laag}}."
+          "en": "GPIO is !{{high|low}}",
+          "nl": "GPIO is !{{hoog|laag}}"
         },
         "titleFormatted": {
-          "en": "GPIO[[io]] is !{{high|low}}.",
-          "nl": "GPIO[[io]] is !{{hoog|laag}}."
+          "en": "GPIO[[io]] is !{{high|low}}",
+          "nl": "GPIO[[io]] is !{{hoog|laag}}"
         },
         "hint": {
           "en": "GPIO 0-53"

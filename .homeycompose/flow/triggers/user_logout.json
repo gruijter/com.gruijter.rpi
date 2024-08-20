@@ -1,7 +1,7 @@
 {
 	"title": { 
-		"en": "A user logged out.",
-		"nl": "Een gebruiker is uitgelogd."
+		"en": "A user logged out",
+		"nl": "Een gebruiker is uitgelogd"
 	},
 	"highlight": true,
 	"args": [

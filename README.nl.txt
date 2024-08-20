@@ -7,6 +7,6 @@ Zet het systeem uit of start het opnieuw op, update het besturingssysteem en beh
 Docker containers:
 Stop, start en herstart containers
 
-Voer elk gewenst CLI-commando uit vanuit Homey:
+Voer CLI-commando's uit:
 Vanuit een geavanceerde flow kun je elk gewenst commando uitvoeren (ik hoop dat je weet wat je doet ;))
 

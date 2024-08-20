@@ -1,4 +1,7 @@
 {
+  "1.0.1": {
+    "en": "Improved non-RPi support. Minor textual changes. Updated brand color."
+  },
   "1.0.0": {
     "en": "First release."
   }
