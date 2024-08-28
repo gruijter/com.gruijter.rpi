@@ -1,11 +1,13 @@
 {
   "title": {
     "en": "Set GPIO output high/low",
-    "nl": "Zet GPIO uitgang hoog/laag"
+    "nl": "Zet GPIO uitgang hoog/laag",
+    "pl": "Ustaw wyjście GPIO na wysokie/niskie"
   },
   "titleFormatted": {
     "en": "Set GPIO[[io]] to [[high]]",
-    "nl": "Zet GPIO[[io]] naar [[high]]"
+    "nl": "Zet GPIO[[io]] naar [[high]]",
+    "pl": "Ustaw GPIO[[io]] na [[high]]"
   },
   "highlight": true,
   "args": [
@@ -29,7 +31,8 @@
       "type": "checkbox",
       "title": {
         "en": "High/Low",
-        "nl": "Hoog/Laag"
+        "nl": "Hoog/Laag",
+        "pl": "Wysoki/Niski"
       }
     }
   ]

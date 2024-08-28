@@ -37,25 +37,25 @@
   ],
   "capabilitiesOptions": {
     "measure_temperature.gpu": { 
-      "title": { "en": "GPU Temp", "nl": "GPU Temp" }
+      "title": { "en": "GPU Temp", "nl": "GPU Temp", "pl": "Temperatura GPU" }
     },
     "measure_temperature.cpu": { 
-      "title": { "en": "CPU Temp", "nl": "CPU Temp" }
+      "title": { "en": "CPU Temp", "nl": "CPU Temp", "pl": "Temperatura CPU" }
     },
     "meter_processes.running": { 
-      "title": { "en": "Running processes", "nl": "Lopende processen" }
+      "title": { "en": "Running processes", "nl": "Lopende processen", "pl": "Aktywne procesy" }
     },
     "meter_download_speed.eth0": { 
-      "title": { "en": "ETH down speed", "nl": "ETH down snelheid" }
+      "title": { "en": "ETH down speed", "nl": "ETH down snelheid", "pl": "Szybkość pob ETH" }
     },
     "meter_upload_speed.eth0": { 
-      "title": { "en": "ETH up speed", "nl": "ETH up snelheid" }
+      "title": { "en": "ETH up speed", "nl": "ETH up snelheid", "pl": "Szybkość wys ETH" }
     },
     "meter_download_speed.wlan0": { 
-      "title": { "en": "WLAN down speed", "nl": "WLAN down snelheid" }
+      "title": { "en": "WLAN down speed", "nl": "WLAN down snelheid", "pl": "Szybkość pob WLAN" }
     },
     "meter_upload_speed.wlan0": { 
-      "title": { "en": "WLAN up speed", "nl": "WLAN up snelheid" }
+      "title": { "en": "WLAN up speed", "nl": "WLAN up snelheid", "pl": "Szypkość wys WLAN" }
     },
     "onoff.gpio0": { 
       "title": { "en": "GPIO 00" }

@@ -1,11 +1,13 @@
 {
   "title": {
     "en": "Start container",
-    "nl": "Start container"
+    "nl": "Start container",
+    "pl": "Uruchom kontener"
   },
   "titleFormatted": {
     "en": "Start container [[id]]",
-    "nl": "Start container [[id]]"
+    "nl": "Start container [[id]]",
+    "pl": "Uruchom kontener [[id]]"
   },
   "highlight": true,
   "args": [

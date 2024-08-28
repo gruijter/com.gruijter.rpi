@@ -1,7 +1,8 @@
 {
 	"title": { 
 		"en": "Active processes changed",
-		"nl": "Actieve processen is veranderd"
+		"nl": "Actieve processen is veranderd",
+		"pl": "Aktywne procesy uległy zmianie"
 	},
 	"highlight": true,
 	"args": [
@@ -17,7 +18,8 @@
 			"type": "number",
 			"title": { 
 				"en": "Number of processes",
-				"nl": "Aantal processen"
+				"nl": "Aantal processen",
+				"pl": "Liczba procesów"
 			},
 			"example": 3
 		}

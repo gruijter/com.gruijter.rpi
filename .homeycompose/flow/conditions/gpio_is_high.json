@@ -2,11 +2,13 @@
 	"highlight": true,
 	"title": {
 		"en": "GPIO is !{{high|low}}",
-		"nl": "GPIO is !{{hoog|laag}}"
+		"nl": "GPIO is !{{hoog|laag}}",
+		"pl": "GPIO jest !{{wysokie|niskie}}"
 	},
 	"titleFormatted": {
 		"en": "GPIO[[io]] is !{{high|low}}",
-		"nl": "GPIO[[io]] is !{{hoog|laag}}"
+		"nl": "GPIO[[io]] is !{{hoog|laag}}",
+		"pl": "GPIO[[io]] jest !{{wysokie|niskie}}"
 	},
 	"hint": { "en": "GPIO 0-53" },
 	"args": [

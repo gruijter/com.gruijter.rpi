@@ -1,7 +1,8 @@
 {
 	"title": { 
 		"en": "The GPU temperature changed",
-		"nl": "De GPU temperatuur is veranderd"
+		"nl": "De GPU temperatuur is veranderd",
+		"pl": "Temperatura GPU uległa zmianie"
 	},
 	"highlight": true,
 	"args": [
@@ -17,7 +18,8 @@
 			"type": "number",
 			"title": { 
 				"en": "GPU temperature",
-				"nl": "GPU temperatuur"
+				"nl": "GPU temperatuur",
+				"pl": "Temperatura GPU"
 			},
 			"example": 50
 		}

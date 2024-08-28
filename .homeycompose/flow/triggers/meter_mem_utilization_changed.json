@@ -1,7 +1,8 @@
 {
 	"title": { 
 		"en": "The memory usage (%) changed",
-		"nl": "Het geheugen gebruik (%) is veranderd"
+		"nl": "Het geheugen gebruik (%) is veranderd",
+		"pl": "Zużycie pamięci (%) uległo zmianie"
 	},
 	"highlight": true,
 	"args": [
@@ -17,7 +18,8 @@
 			"type": "number",
 			"title": { 
 				"en": "Memory used (%)",
-				"nl": "Geheugen gebruikt (%)"
+				"nl": "Geheugen gebruikt (%)",
+				"pl": "Zużycie pamięci (%)"
 			},
 			"example": 50
 		}

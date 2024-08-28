@@ -1,11 +1,13 @@
 {
   "title": {
     "en": "Restart container",
-    "nl": "Restart container"
+    "nl": "Restart container",
+    "pl": "Uruchom ponownie kontener"
   },
   "titleFormatted": {
     "en": "Restart container [[id]]",
-    "nl": "Restart container [[id]]"
+    "nl": "Restart container [[id]]",
+    "pl": "Uruchom ponownie kontener [[id]]"
   },
   "highlight": true,
   "args": [

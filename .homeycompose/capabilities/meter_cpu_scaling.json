@@ -2,7 +2,8 @@
   "type": "number",
   "title": {
     "en": "CPU scaling",
-    "nl": "CPU schaling"
+    "nl": "CPU schaling",
+    "pl": "Skalowanie CPU"
   },
   "getable": true,
   "setable": false,

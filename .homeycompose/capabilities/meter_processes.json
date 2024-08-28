@@ -2,7 +2,8 @@
   "type": "number",
   "title": {
     "en": "Active processes",
-    "nl": "Aktieve processen"
+    "nl": "Aktieve processen",
+    "pl": "Aktywne procesy"
   },
   "getable": true,
   "setable": false,

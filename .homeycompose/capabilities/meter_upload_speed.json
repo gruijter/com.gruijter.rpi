@@ -2,13 +2,15 @@
   "type": "number",
   "title": {
     "en": "Upload speed",
-    "nl": "Upload snelheid"
+    "nl": "Upload snelheid",
+    "pl": "Prędkość wysyłania"
   },
   "getable": true,
   "setable": false,
   "units": {
     "en": "Mbit/s",
-    "de": "Mbit/s"
+    "de": "Mbit/s",
+    "pl": "Mbit/s"
   },
   "decimals": 2,
   "insights": true,

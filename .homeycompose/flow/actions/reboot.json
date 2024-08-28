@@ -1,7 +1,8 @@
 {
   "title": {
     "en": "Reboot",
-    "nl": "Herstart"
+    "nl": "Herstart",
+    "pl": "Ponowne uruchomienie"
   },
   "highlight": true,
   "args": [

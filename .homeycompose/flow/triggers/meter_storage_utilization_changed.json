@@ -1,7 +1,8 @@
 {
 	"title": { 
 		"en": "The storage usage (%) changed",
-		"nl": "Het opslag gebruik (%) is veranderd"
+		"nl": "Het opslag gebruik (%) is veranderd",
+		"pl": "Wykorzystanie miejsca do przechowywania (%) uległo zmianie"
 	},
 	"highlight": true,
 	"args": [
@@ -17,7 +18,8 @@
 			"type": "number",
 			"title": { 
 				"en": "Storage used (%)",
-				"nl": "Opslag gebruikt (%)"
+				"nl": "Opslag gebruikt (%)",
+				"pl": "Użyte miejsce do przechowywania (%)"
 			},
 			"example": 50
 		}

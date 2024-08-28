@@ -2,7 +2,8 @@
   "type": "number",
   "title": {
     "en": "Storage used",
-    "nl": "Opslag gebruikt"
+    "nl": "Opslag gebruikt",
+    "pl": "Użyte miejsce do przechowywania"
   },
   "getable": true,
   "setable": false,

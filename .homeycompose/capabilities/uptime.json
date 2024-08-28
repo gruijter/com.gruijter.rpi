@@ -1,7 +1,8 @@
 {
   "type": "string",
   "title": {
-    "en": "Uptime"
+    "en": "Uptime",
+    "pl": "Czas działania"
   },
   "getable": true,
   "setable": false,

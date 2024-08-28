@@ -1,11 +1,13 @@
 {
   "title": {
     "en": "Update OS (!)",
-    "nl": "OS Updaten (!)"
+    "nl": "OS Updaten (!)",
+    "pl": "Zaktualizuj system operacyjny (!)"
   },
   "hint": {
     "en": "ATTENTION! This will automatically update the OS without feedback.",
-    "nl": "LET OP! Dit zal automatisch het OS updaten zonder feedback."
+    "nl": "LET OP! Dit zal automatisch het OS updaten zonder feedback.",
+    "pl": "UWAGA! To automatycznie zaktualizuje system operacyjny bez informacji zwrotnej."
   },
   "highlight": true,
   "args": [
