@@ -1,15 +1,18 @@
 {
   "title": {
     "en": "Execute a command",
-    "nl": "Voer een commando uit"
+    "nl": "Voer een commando uit",
+    "pl": "Wykonaj polecenie"
   },
   "titleFormatted": {
     "en": "Execute [[command]]",
-    "nl": "Uitvoeren [[command]]"
+    "nl": "Uitvoeren [[command]]",
+    "pl": "Wykonaj [[command]]"
   },
   "hint": {
     "en": "Execute a CLI command.",
-    "nl": "Voer een CLI commando uit."
+    "nl": "Voer een CLI commando uit.",
+    "pl": "Wykonaj polecenie CLI."
   },
   "highlight": true,
   "args": [
@@ -23,7 +26,8 @@
       "type": "text",
       "title": {
         "en": "Command",
-        "nl": "Commando"
+        "nl": "Commando",
+        "pl": "Polecenie"
       },
       "placeholder": {
         "en": "sudo who -u"
@@ -35,7 +39,8 @@
 			"name": "response",
 			"title": {
 				"en": "Response",
-				"nl": "Respons"
+				"nl": "Respons",
+        "pl": "Odpowiedź"
 			},
 			"type": "string",
 			"example": "pi pts/1 2024-08-19 11:09 . 76414 (192.168.0.18)"

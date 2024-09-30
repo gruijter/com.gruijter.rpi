@@ -1,7 +1,8 @@
 {
 	"title": { 
 		"en": "A user logged out",
-		"nl": "Een gebruiker is uitgelogd"
+		"nl": "Een gebruiker is uitgelogd",
+		"pl": "Użytkownik się wylogował"
 	},
 	"highlight": true,
 	"args": [
@@ -17,7 +18,8 @@
 			"type": "string",
 			"title": { 
 				"en": "User name",
-				"nl": "Gebruikersnaam"
+				"nl": "Gebruikersnaam",
+				"pl": "Nazwa użytkownika"
 			},
 			"example": "pi"
 		},
@@ -26,7 +28,8 @@
 			"type": "string",
 			"title": { 
 				"en": "TTY",
-				"nl": "TTY"
+				"nl": "TTY",
+				"pl": "TTY"
 			},
 			"example": "pts/0"
 		},
@@ -35,7 +38,8 @@
 			"type": "string",
 			"title": { 
 				"en": "Host",
-				"nl": "Host"
+				"nl": "Host",
+				"pl": "Host"
 			},
 			"example": "192.168.1.46"
 		},
@@ -44,7 +48,8 @@
 			"type": "string",
 			"title": { 
 				"en": "Login time",
-				"nl": "Login tijd"
+				"nl": "Login tijd",
+				"pl": "Czas zalogowania"
 			},
 			"example": "2024-08-06T10:52:20+02:00"
 		},
@@ -53,7 +58,8 @@
 			"type": "string",
 			"title": { 
 				"en": "Logout time",
-				"nl": "Logout tijd"
+				"nl": "Logout tijd",
+				"pl": "Czas wylogowania"
 			},
 			"example": "2024-08-06T10:59:20+02:00"
 		},
@@ -62,7 +68,8 @@
 			"type": "string",
 			"title": { 
 				"en": "Duration",
-				"nl": "Duur"
+				"nl": "Duur",
+				"pl": "Czas trwania"
 			},
 			"example": "00:07"
 		},
@@ -71,7 +78,8 @@
 			"type": "string",
 			"title": { 
 				"en": "Info",
-				"nl": "Info"
+				"nl": "Info",
+				"pl": "Info"
 			},
 			"example": "gone - no logout"
 		}

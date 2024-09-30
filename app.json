@@ -12,7 +12,8 @@
     "en": "Raspberry Pi"
   },
   "description": {
-    "en": "Monitor and control your RPi"
+    "en": "Monitor and control your RPi",
+    "pl": "Monitoruj i kontroluj swoje RPi"
   },
   "tags": {
     "en": [
@@ -42,6 +43,11 @@
       {
         "name": "Robin de Gruijter",
         "email": "gruijter@hotmail.com"
+      }
+    ],
+    "translators": [
+      {
+        "name": "🇵🇱 Hubert Ryglowski"
       }
     ]
   },

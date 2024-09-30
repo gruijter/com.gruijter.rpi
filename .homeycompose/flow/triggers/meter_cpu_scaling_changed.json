@@ -1,7 +1,8 @@
 {
 	"title": { 
 		"en": "The CPU scaling (%) changed",
-		"nl": "De CPU schaling (%) is veranderd"
+		"nl": "De CPU schaling (%) is veranderd",
+		"pl": "Skalowanie procesora (%) uległo zmianie"
 	},
 	"highlight": true,
 	"args": [
@@ -17,7 +18,8 @@
 			"type": "number",
 			"title": { 
 				"en": "CPU scaling (%)",
-				"nl": "CPU schaling (%)"
+				"nl": "CPU schaling (%)",
+				"pl": "Skalowanie CPU (%)"
 			},
 			"example": 60
 		}

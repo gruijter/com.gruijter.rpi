@@ -2,7 +2,8 @@
   "type": "number",
   "title": {
     "en": "Users",
-    "nl": "Gebruikers"
+    "nl": "Gebruikers",
+    "pl": "Użytkownicy"
   },
   "getable": true,
   "setable": false,

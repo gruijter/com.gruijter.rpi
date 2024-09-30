@@ -1,11 +1,13 @@
 {
   "title": {
     "en": "Stop container",
-    "nl": "Stop container"
+    "nl": "Stop container",
+    "pl": "Zatrzymaj kontener"
   },
   "titleFormatted": {
     "en": "Stop container [[id]]",
-    "nl": "Stop container [[id]]"
+    "nl": "Stop container [[id]]",
+    "pl": "Zatrzymaj kontener [[id]]"
   },
   "highlight": true,
   "args": [

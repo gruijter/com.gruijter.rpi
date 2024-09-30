@@ -1,7 +1,8 @@
 {
 	"title": { 
 		"en": "Running processes changed",
-		"nl": "Lopende processen is veranderd"
+		"nl": "Lopende processen is veranderd",
+		"pl": "Działające procesy uległy zmianie"
 	},
 	"highlight": true,
 	"args": [
@@ -17,7 +18,8 @@
 			"type": "number",
 			"title": { 
 				"en": "Number of processes",
-				"nl": "Aantal processen"
+				"nl": "Aantal processen",
+				"pl": "Liczba procesów"
 			},
 			"example": 3
 		}

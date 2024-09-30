@@ -2,11 +2,13 @@
 	"highlight": true,
 	"title": {
 		"en": "GPIO turned low",
-		"nl": "GPIO werd laag"
+		"nl": "GPIO werd laag",
+		"pl": "GPIO zmieniło się na niskie"
 	},
 	"titleFormatted": {
 		"en": "GPIO[[io]] turned low",
-		"nl": "GPIO[[io]] werd laag"
+		"nl": "GPIO[[io]] werd laag",
+		"pl": "GPIO[[io]] zmieniło się na niskie"
 	},
 	"hint": { "en": "GPIO 0-53" },
 	"args": [

@@ -2,7 +2,8 @@
   "type": "number",
   "title": {
     "en": "Memory used",
-    "nl": "Geheugen gebruikt"
+    "nl": "Geheugen gebruikt",
+    "pl": "Wykorzystanie pamięci"
   },
   "getable": true,
   "setable": false,

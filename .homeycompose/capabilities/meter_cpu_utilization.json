@@ -2,7 +2,8 @@
   "type": "number",
   "title": {
     "en": "CPU used",
-    "nl": "CPU gebruikt"
+    "nl": "CPU gebruikt",
+    "pl": "Wykorzystanie CPU"
   },
   "getable": true,
   "setable": false,

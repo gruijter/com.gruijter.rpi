@@ -1,7 +1,8 @@
 {
 	"title": { 
 		"en": "The number of users changed",
-		"nl": "Het aantal gebruikers is veranderd"
+		"nl": "Het aantal gebruikers is veranderd",
+		"pl": "Liczba użytkowników uległa zmianie"
 	},
 	"highlight": true,
 	"args": [
@@ -17,7 +18,8 @@
 			"type": "number",
 			"title": { 
 				"en": "Number of users",
-				"nl": "Aantal gebruikers"
+				"nl": "Aantal gebruikers",
+				"pl": "Liczba użytkowników"
 			},
 			"example": 3
 		}

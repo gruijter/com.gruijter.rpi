@@ -2,13 +2,15 @@
   "type": "number",
   "title": {
     "en": "Download speed",
-    "nl": "Download snelheid"
+    "nl": "Download snelheid",
+    "pl": "Prędkość pobierania"
   },
   "getable": true,
   "setable": false,
   "units": {
     "en": "Mbit/s",
-    "de": "Mbit/s"
+    "de": "Mbit/s",
+    "pl": "Mbit/s"
   },
   "decimals": 2,
   "insights": true,

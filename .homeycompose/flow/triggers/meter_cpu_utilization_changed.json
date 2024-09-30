@@ -1,7 +1,8 @@
 {
 	"title": { 
 		"en": "The CPU usage (%) changed",
-		"nl": "Het CPU gebruik (%) is veranderd"
+		"nl": "Het CPU gebruik (%) is veranderd",
+		"pl": "Zużycie CPU (%) uległo zmianie"
 	},
 	"highlight": true,
 	"args": [
@@ -17,7 +18,8 @@
 			"type": "number",
 			"title": { 
 				"en": "CPU used (%)",
-				"nl": "CPU gebruikt (%)"
+				"nl": "CPU gebruikt (%)",
+				"pl": "Zużycie CPU (%)"
 			},
 			"example": 50
 		}

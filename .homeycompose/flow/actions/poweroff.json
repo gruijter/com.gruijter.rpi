@@ -1,11 +1,13 @@
 {
   "title": {
     "en": "Power off (!)",
-    "nl": "Uitschakelen (!)"
+    "nl": "Uitschakelen (!)",
+    "pl": "Wyłącz zasilanie (!)"
   },
   "hint": {
     "en": "ATTENTION! There is no command to power on the RPi.",
-    "nl": "LET OP! Er is geen commando om de RPI op te starten."
+    "nl": "LET OP! Er is geen commando om de RPI op te starten.",
+    "pl": "UWAGA! Nie istnieje polecenie do włączenia RPi."
   },
   "highlight": true,
   "args": [
