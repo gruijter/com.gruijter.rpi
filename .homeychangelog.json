@@ -1,10 +1,11 @@
 {
+  "1.0.2": {
+    "en": "Added Polish language support."
+  },
   "1.0.1": {
-    "en": "Improved non-RPi support. Minor textual changes. Updated brand color.",
-    "pl": "Ulepszone wsparcie dla urządzeń innych niż RPi. Drobne zmiany tekstowe. Zaktualizowany kolor marki."
+    "en": "Improved non-RPi support. Minor textual changes. Updated brand color."
   },
   "1.0.0": {
-    "en": "First release.",
-    "pl": "Pierwsze wydanie."
+    "en": "First release."
   }
 }
