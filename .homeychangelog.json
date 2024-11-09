@@ -1,11 +1,14 @@
 {
   "1.0.2": {
-    "en": "Added Polish language support."
+    "en": "Added Polish language support.",
+    "pl": "Dodano wsparcie dla języka Polskiego."
   },
   "1.0.1": {
-    "en": "Improved non-RPi support. Minor textual changes. Updated brand color."
+    "en": "Improved non-RPi support. Minor textual changes. Updated brand color.",
+    "pl": "Ulepszone wsparcie dla urządzeń innych niż RaspberryPi. Drobne zmiany tekstowe. Zaktualizowany kolor marki."
   },
   "1.0.0": {
-    "en": "First release."
+    "en": "First release.",
+    "pl": "Pierwsze wydanie."
   }
 }
